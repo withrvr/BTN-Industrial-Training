@@ -1,0 +1,23 @@
+<br>
+<h1><span class="badge badge-pill badge-primary">SKILL</span></h1>
+<br>
+<table class="table table-bordered table-hover">
+	<tbody>
+		<tr>
+			<td>Description</td>
+			<td>{{ skill_description }}</td>
+		</tr>
+		<tr>
+			<td>Skills</td>
+			<td>
+				{% for i in skill_skills %}
+					<big><span class="badge badge-secondary">{{ i }}</span></big>
+				{% endfor  %}
+			</td>
+		</tr>
+		<tr>
+			<td>Percentage</td>
+			<td>{{ skill_percentage }}</td>
+		</tr>
+	</tbody>
+</table>

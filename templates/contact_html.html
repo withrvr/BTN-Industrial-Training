@@ -1,0 +1,23 @@
+{% extends 'base_html.html' %}
+
+{% block content %}
+
+	{% if contact_save_msg %}
+		<div class="alert alert-success">
+			<b>"{{ name }}"</b> - your information is saved.
+		</div>
+	{% else %}
+		<div class="alert alert-danger">
+			Fill the contact form, as soon as you can
+		</div>
+	{% endif %}
+	
+	<div class="container">
+		<form method="POST">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input type="submit" value="Click to Submit" class="btn btn-primary">
+		</form>
+	</div>
+
+{% endblock content %}

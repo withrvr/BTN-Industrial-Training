@@ -1,0 +1,28 @@
+<br>
+<h1><span class="badge badge-pill badge-primary">EXPERIENCE</span></h1>
+<br>
+
+<table class="table table-bordered table-hover">
+	<tbody>
+		<tr>
+			<td>Company Name</td>
+			<td>{{ experience_company_name }}</td>
+		</tr>
+		<tr>
+			<td>Duration</td>
+			<td>{{ experience_duration }}</td>
+		</tr>
+		<tr>
+			<td>Designation</td>
+			<td>
+				{% for i in experience_designation %}
+					<big><span class="badge badge-secondary">{{ i }}</span></big>
+				{% endfor  %}
+			</td>
+		</tr>
+		<tr>
+			<td>Description</td>
+			<td>{{ experience_description }}</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,47 @@
+<!-- <br> -->
+<h1><span class="badge badge-pill badge-primary">ABOUT</span></h1>
+<br>
+<table class="table table-bordered table-hover">
+	<tbody>
+		<tr>
+			<td>Values</td>
+			<td>
+				{% for i in about_values %}
+					<big><span class="badge badge-secondary">{{ i }}</span></big>
+				{% endfor  %}
+			</td>
+		</tr>
+		<tr>
+			<td>Goals</td>
+			<td>
+				{% for i in about_goals %}
+					<big><span class="badge badge-secondary">{{ i }}</span></big>
+				{% endfor  %}
+			</td>
+		</tr>
+		<tr>
+			<td>Hobbies</td>
+			<td>
+				{% for i in about_hobbies %}
+					<big><span class="badge badge-secondary">{{ i }}</span></big>
+				{% endfor  %}
+			</td>
+		</tr>
+		<tr>
+			<td>Discription</td>
+			<td>{{ about_discription }}</td>
+		</tr>
+		<tr>
+			<td>Projects</td>
+			<td>
+				{% for i in about_projects %}
+					<big><span class="badge badge-secondary">{{ i }}</span></big>
+				{% endfor  %}
+			</td>
+		</tr>
+		<tr>
+			<td>Logo</td>
+			<td><img src="{{ about_logo.url }}" alt="Not Supporting In this Browser" width="100"></td>
+		</tr>
+	</tbody>
+</table>
